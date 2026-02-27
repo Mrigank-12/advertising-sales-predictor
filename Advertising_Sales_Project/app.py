@@ -19,7 +19,7 @@ st.set_page_config(
 )
 
 # ---------------- LOAD MODEL ---------------- #
-model = joblib.load("advertising_model.pkl")
+model = joblib.load("../advertising_model.pkl")
 
 # Load dataset for performance & insights
 df = pd.read_csv("Advertising.csv")
@@ -379,4 +379,5 @@ st.markdown(
     🤖 **Model:** Tuned Random Forest Regressor  
     🎓 Built using Machine Learning & Streamlit
     """
+
 )
