@@ -22,7 +22,7 @@ st.set_page_config(
 model = joblib.load("../advertising_model.pkl")
 
 # Load dataset for performance & insights
-df = pd.read_csv("Advertising.csv")
+df = pd.read_csv("../advertising.csv")
 X = df.drop("Sales", axis=1)
 y = df["Sales"]
 
@@ -381,3 +381,4 @@ st.markdown(
     """
 
 )
+
